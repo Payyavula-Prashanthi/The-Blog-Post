@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Post</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .blog-title {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .author-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .author-bio {
+            flex-grow: 1;
+        }
+
+        .blog-content {
+            margin-bottom: 30px;
+        }
+
+        .comments-section {
+            margin-top: 50px;
+        }
+
+        .comment {
+            margin-bottom: 20px;
+        }
+
+        .comment-info {
+            margin-bottom: 10px;
+        }
+
+        .comment-timestamp {
+            color: #888;
+            font-size: 0.8rem;
+        }
+
+        #comment-form {
+            margin-top: 20px;
+        }
+
+        #comment-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #comment-form input[type="text"],
+        #comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #comment-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #comment-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="blog-title">My Blog Post Title</h1>
+        </header>
+        
+        <article>
+            <div class="author-info">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsF-ox_pDapDPi9_8C_1k1DISIIYn2eNTYm7tcwl2G8VxYZIdx5udKfZA&s=10" alt="Author's Profile Picture" class="author-avatar">
+                <div class="author-bio">
+                    <h2>PrashanthiMadhu</h2>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div class="blog-content">
+                <p>
+                    The whole journey I travel in the city of dreams.The fun I make, Entertainment,experiance every content will be to experiance by U.
+                </p>
+            </div>
+        </article>
+        
+        <section class="comments-section">
+            <h2>Comments</h2>
+            <div class="comment">
+                <div class="comment-info">
+                    <strong>Commenter's Name</strong>
+                    <span class="comment-timestamp">April 13, 2024</span>
+                </div>
+                <p>Comment content goes here.</p>
+            </div>
+            
+            <!-- More comments can be added here -->
+            
+            <!-- Form for adding new comments -->
+            <form id="comment-form">
+                <label for="commenter-name">Your Name:</label>
+                <input type="text" id="commenter-name" name="commenter-name" required>
+                <label for="comment-content">Your Comment:</label>
+                <textarea id="comment-content" name="comment-content" rows="4" required></textarea>
+                <button type="submit">Submit Comment</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
